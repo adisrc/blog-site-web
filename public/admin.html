@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <h2>Create New Post</h2>
+    <form id="postForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <button type="submit">Create Post</button>
+    </form>
+    <hr>
+    <h2>Delete Post</h2>
+    <form id="deleteForm">
+        <label for="postId">Post ID:</label><br>
+        <input type="text" id="postId" name="postId"><br>
+        <button type="submit">Delete Post</button>
+    </form>
+    <div id="message"></div>
+
+    <script src="app.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
